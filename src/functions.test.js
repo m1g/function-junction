@@ -90,11 +90,7 @@ const rovarspraket = (str) => {
  */
 
 const reverse = (str) => {
-  const splitStr = str.split('')
-  const reverseStr = splitStr.reverse('')
-  const joinStr = reverseStr.join('')
-
-  return joinStr
+  return str.split('').reverse().join('')
 }
 
  /**
@@ -104,24 +100,31 @@ const reverse = (str) => {
   * i.e. findLongestWord("book dogs") should return "book"
   */
 
+const findLongestWord = (str) => {
+  const longestWord = str.split(' ').sort((a, b) => {
+    return b.length - a.length
+  })
+  return longestWord[0]
+}
+
 /***********************
 STACK OVERFLOW SOLUTION
 ***********************/
 // credit: Marco Bonelli
 // http://stackoverflow.com/questions/17386774/javascript-find-longest-word-in-a-string
 
-const findLongestWord = (string) => {
-  const splitWord = string.split(' ')
-  let longestWord = 0
-  let word = null
-  for (let i = 0; i < splitWord.length; i++) {
-    if (longestWord < splitWord[i].length) {
-      longestWord = splitWord[i].length
-      word = splitWord[i]
-    }
-  }
-  return word
-}
+// const findLongestWord = (string) => {
+//   const splitWord = string.split(' ')
+//   let longestWord = 0
+//   let word = null
+//   for (let i = 0; i < splitWord.length; i++) {
+//     if (longestWord < splitWord[i].length) {
+//       longestWord = splitWord[i].length
+//       word = splitWord[i]
+//     }
+//   }
+//   return word
+// }
 
 /**
  * NOTE: Don't modify anything below this line...
