@@ -4,26 +4,65 @@
  * construct available in Javascript.
  */
 
+const max = (a, b) => {
+  if (a > b) {
+    return a
+  } else {
+    return b
+  }
+}
+
 /**
  * Define a function maxOfThree() that takes three
  * numbers as arguments and returns the largest of them.
  */
+
+const maxOfThree = (a, b, c) => {
+  if (a > b && a > c) {
+    return a
+  } else if (b > a && b > c) {
+    return b
+  } else {
+    return c
+  }
+}
 
 /*
  * Define a function sum() that takes two numbers as
  * arguments and computes the sum of those two numbers.
  */
 
+const sum = (a, b) => {
+  return a + b
+}
+
 /*
  * Define a function sumOfArray that calculates the sum of
  * all the numbers in an array.
  */
+
+const sumOfArray = (myArray) => {
+  let total = 0
+  for (let i = 0; i < myArray.length; i++) {
+    total += myArray[i]
+  }
+  return total
+}
 
 /**
  * Write a function isVowel() that takes a character (i.e. a string of length 1)
  * and returns true if it is a vowel, false otherwise.
  */
 
+const isVowel = (myVowel) => {
+  let myArray = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  for (var i = 0; i < myArray.length; i++) {
+    if (myArray[i] === myVowel) {
+      return true
+    }
+  }
+  return false
+}
  /**
   * Write a function rovarspraket() that will translate
   * a text into a "rövarspråket". That is, double every
@@ -33,6 +72,16 @@
   * return the string "tothohisos isos fofunon".
   */
 
+const rovarspraket = (str) => {
+  const splitStr = str.split('')
+  for (var i = 0; i < splitStr.length; i++) {
+    if (!isVowel(splitStr[i])) {
+      splitStr[i] = splitStr[i] + 'o' + splitStr[i]
+    }
+  }
+  return splitStr.join('')
+}
+
 /**
  * Define a function reverse() that computes
  * the reversal of a string. For example,
@@ -40,12 +89,23 @@
  * string "books".
  */
 
+const reverse = (str) => {
+  return str.split('').reverse().join('')
+}
+
  /**
   * Write a function findLongestWord() that takes an
   * string returns the first, longest word in the array.
   *
   * i.e. findLongestWord("book dogs") should return "book"
   */
+
+const findLongestWord = (str) => {
+  const longestWord = str.split(' ').sort((a, b) => {
+    return b.length - a.length
+  })
+  return longestWord[0]
+}
 
 /***********************
 STACK OVERFLOW SOLUTION

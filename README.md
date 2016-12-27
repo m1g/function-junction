@@ -1,22 +1,23 @@
-# Function Junction
+# Function Kata
 
 ## Objectives
 
-After completing this assignment, you should be able to:
+This assignment should enable you to demonstrate an understanding of types, functions, argument-handling, loops, and conditional statements
 
-* Demonstrate understanding of types, functions, argument-handling, loops, and conditional statements
+![Function kata problems](http://i.imgur.com/HSF1SKt.png)
+
+**Kata** - a Japanese word, were originally teaching and training methods by which successful combat techniques were preserved and passed on. In programming it is an exercise which helps a programmer hone their skills through practice and repetition. The term was coined by Dave Thomas, co-author of the book _The Pragmatic Programmer_, as an homage to the Japanese concept of kata in martial arts. [[cite]](http://bit.ly/2ibWW2B)
 
 ## Details
 
 Instructions
 
-1. Fork [this repository](https://gibhub.com/tiy-tpa-fee/function-junction) to your own account.
-2. Change into today's directory: `take ~/tiy/week-3/day-1`
-3. Clone your repository: `hub clone function-junction`
-4. Change into your project's directory: `cd function-junction`
-5. Install the dependencies: `yarn` or `npm install`
-6. Open in Atom: `atom .`
-7. Start test runner: `yarn test` or `npm test`
+1. Fork [this repository](https://gibhub.com/m1g/function-kata) to your own account.
+2. Clone your repository: `git clone function-junction`
+3. Change into your project's directory: `cd function-junction`
+4. Install the dependencies: `yarn` or `npm install`
+5. Open in Atom: `atom .`
+6. Start test runner: `yarn test` or `npm test`
 7. Open `src/functions.test.js` and work on functions until tests pass.
 8. Commit and push your work to github.
 
@@ -24,7 +25,6 @@ Instructions
 
 - All tests passing
 - No linter warnings
-- Turn in the homework using the URL to your repository on Github.
 
 ## Adventure Mode
 
